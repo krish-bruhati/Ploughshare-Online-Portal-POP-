@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { concat } from '../observable/concat';\nexport function endWith(...array) {\n  return source => concat(source, ...array);\n} //# sourceMappingURL=endWith.js.map","map":null,"metadata":{},"sourceType":"module"}
