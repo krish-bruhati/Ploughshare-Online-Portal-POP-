@@ -1,0 +1,73 @@
+<!-- <mat-card class="card-section">
+    <div *ngFor="let item of profile | keyvalue">
+        <p><strong>{{item.key}}: </strong>{{item.value}}</p>
+    </div>
+</mat-card> -->
+
+<div style = "margin:auto;width:60%">
+    <mat-card>
+        <mat-card-title style="text-align:center;">User Information</mat-card-title>
+            <mat-card-content style="text-align:center;">
+                <div style="display: inline-block;">
+                    <mat-list style="max-width: 50vw;">
+                        <mat-divider>[inset]="false"</mat-divider>
+                        <mat-list-item>
+                            <div class = "list-item-title">User Name:</div>
+                            <div class = "list-item-content">{{profile.userPrincipalName}}</div>
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-list style="max-width: 50vw;">
+                        <mat-divider></mat-divider>
+                        <mat-list-item>
+                            <div class = "list-item-title">Display Name:</div>
+                            <div class = "list-item-content">{{profile.displayName}}</div>
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-list style="max-width: 50vw;">
+                        <mat-divider></mat-divider>
+                        <mat-list-item>
+                            <div class = "list-item-title">ID:</div>
+                            <div class = "list-item-content">{{profile.id}}</div>
+                        </mat-list-item>
+                    </mat-list>
+                </div>
+                
+                
+                
+              
+                <!-- <div style="display: inline-block;">
+                <mat-card>
+                    <mat-card-content>
+                        <img [src]="profilePic", height="250px" width="250px"/> 
+                    </mat-card-content>
+                </mat-card>
+                </div> -->
+            </mat-card-content>
+    </mat-card>
+</div>
+
+<!-- <mat-card class="card-section">
+<mat-card-title>Clients</mat-card-title>
+<mat-list >
+    <mat-list-item><a class="title" href="/">DSTL</a></mat-list-item>
+    <mat-list-item><a class="title" href="/">DIPR</a></mat-list-item>
+    <mat-list-item><a class="title" href="/">MOD</a></mat-list-item>
+    <mat-list-item><a class="title" href="/">AWE</a></mat-list-item>
+   </mat-list>
+</mat-card>
+
+<mat-list>
+    <mat-list-item>
+      <span matListItemTitle>Pepper</span>
+      <span matListItemLine>Produced by a plant</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemTitle>Salt</span>
+      <span matListItemLine>Extracted from sea water</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemTitle>Paprika</span>
+      <span matListItemLine>Produced by dried and ground red peppers</span>
+    </mat-list-item>
+  </mat-list>
+ -->

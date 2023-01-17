@@ -1,0 +1,16 @@
+<link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+<mat-toolbar color="primary">
+    <img class="w3-image" src="https://ploughshare.co.uk/wp-content/themes/Eldo/images/logo-white.png" alt="Architecture" width="180" height="40">
+    <a class="title" href="/">{{ title }}</a>
+
+    <div class="toolbar-spacer"></div>
+    <!-- <a *ngIf="isAuthenticated">Welcome {{profile.givenName}}</a> -->
+    <a *ngIf="isAuthenticated">Welcome {{activeUser}}</a>
+    <!-- <a mat-button [routerLink]="['profile']">Profile</a> -->
+    <button mat-raised-button (click)="login()"*ngIf="!isAuthenticated">Login</button>
+    <button mat-raised-button color="accent" (click)="logout()"*ngIf="isAuthenticated">Logout</button>
+</mat-toolbar>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

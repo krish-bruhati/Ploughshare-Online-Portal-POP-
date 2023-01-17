@@ -1,0 +1,42 @@
+<div style = "margin:auto;width:60%">
+    <mat-card>
+        <mat-card-title style="text-align:center;">Client Profile</mat-card-title>
+            <mat-card-content style="text-align:center;">
+                <div style="display: inline-block;">
+                    <mat-list style="max-width: 50vw;">
+                        <mat-divider>[inset]="false"</mat-divider>
+                        <mat-list-item>
+                            <div class = "list-item-title">User Name:</div>
+                            <div class = "list-item-content">{{profile.userPrincipalName}}</div>
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-list style="max-width: 50vw;">
+                        <mat-divider></mat-divider>
+                        <mat-list-item>
+                            <div class = "list-item-title">Display Name:</div>
+                            <div class = "list-item-content">{{profile.displayName}}</div>
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-list style="max-width: 50vw;">
+                        <mat-divider></mat-divider>
+                        <mat-list-item>
+                            <div class = "list-item-title">ID:</div>
+                            <div class = "list-item-content">{{profile.id}}</div>
+                        </mat-list-item>
+                    </mat-list>
+                </div>
+                
+                
+                
+              
+                <div style="display: inline-block;">
+                <mat-card>
+                    <mat-card-content>
+                        <!-- <img [src]="profilePic", height="250px" width="250px"/>  -->
+                        <img src="https://cdn-icons-png.flaticon.com/512/6009/6009864.png" height="150px" width="150px"/>
+                    </mat-card-content>
+                </mat-card>
+                </div>
+            </mat-card-content>
+    </mat-card>
+</div>
